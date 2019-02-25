@@ -6,11 +6,11 @@ services:
       - 25565:25565
     environment:
       EULA: "TRUE"
-      TYPE: "FORGE"
-      FORGEVERSION: "14.23.5.2808"
       MEMORY: "2G"
+      VERSION: "SNAPSHOT"
+      SEED: "-770557604693672"
     volumes:
-      - /opt/minecraft:/data
+      - ./data:/data
 
     tty: true
     stdin_open: true
